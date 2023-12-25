@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+body::backdrop {
+    background-color: rgba(201, 35, 35, 0);
+}
+
+header{
+    /*background-color: lightskyblue;*/
+    color: rgb(226, 226, 226)19, 56, 56;
+    height: 80px;
+    margin-bottom: -1px;
+    background-image: url("background/Clouds.png");
+}
+header h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#div0{
+    display: inline-block;
+    width: 33%;
+    height: 50px;
+    /*background-color: blueviolet;*/
+}
+#div1{
+    margin-top: 10px;
+    display: inline-block;
+    align-items: center;
+    width: 33%;
+    height: 50px;
+    /*background-color: blueviolet;*/
+}
+#divindiv{
+    display: flex;
+    justify-content: center;
+}
+#pl{
+    padding-left: 5px;
+    width: 40px;
+    height: 40px;
+}
+#sc{
+    padding-right: 5px;
+    width: 40px;
+    height: 40px;
+}
+#div2{
+    display: inline-block;
+    width: 33%;
+    height: 50px;
+    /*background-color: blueviolet;*/
+    text-align: right;
+    padding-right: 35px;
+}
+#rules{
+}
+#heart{
+    width: 20px;
+    height: 20px;
+}
+#gameRules{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ulRules{
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#divRules{
+    margin-left: 15%;
+    width: 70%;
+    position: absolute;
+    padding: center;
+    background-color: white;
+}
+
+#synonym{}
+
+#divSynonym{
+    margin-left: 15%;
+    width: 70%;
+    position: absolute;
+    padding: center;
+    background-color: white;
+}
+
+#gameSynonym{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ulSynonym{
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#canvasWrapper {
+    /*background-color: rgba(248, 0, 0, 0.555);*/
+    width: 100%;
+    /*height: 500px;*/
+    /*height: 600px;*/
+    height: 600px;
+    display: block;
+    position: relative;
+    /*position: absolute;*/
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url("background/BehindHouses.png");
+}
+
+#canvasWrapper ::backdrop{
+    background-image:url("background/layer-3.png");
+}
+ 
+#canvasWrapper.fullscreen{
+    background-image: none;
+    background-color:white;
+    background-image: url(background/BackGround.png);
+}
+
+
+#canvas1 {
+    height: 500px;
+    width: 1000px;
+    border: 5px solid black;
+    background-color: white;
+    position: absolute;
+    padding: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*transform: translateX(-50%);*/
+    max-width: 100%;
+    max-height: 100%;
+    display:  none;
+}
+
+#footer{
+    position: absolute;
+    background-image: url("background/Ground.png");
+    width: 100%;
+    height: 57px;
+    max-height: 57px;
+    /*background-color: brown;*/
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        /*background-color: lightskyblue;*/
+        color: rgb(226, 226, 226)19, 56, 56;
+        height: 100px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    #pl{
+        margin-top: 5px;
+        padding-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    #sc{
+        margin-top: 5px;
+        padding-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    #canvas1 {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    #div0{
+        display: none;
+    }
+    #div1{
+        margin-top: 10px;
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        /*background-color: blueviolet;*/
+    }
+    #div2{
+        display: block;
+        width: 100%;
+        height: 50px;
+        /*background-color: blueviolet;*/
+        text-align: center;
+        padding-right: 0px;
+    }
+  }
+
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy, #fire, #clouds, #behindHouses, #ground, #background, #infullscreen, #notinfullscreen{
+    display: none;
+}
+
+#up, #down, #left, #right, #enter, #health, #play{
+    display: none;
+}
