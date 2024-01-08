@@ -13,13 +13,8 @@ export class RestartGame{
         this.game.canvas.addEventListener('click', function(event) {          
             let xVal = event.offsetX;
             let yVal = event.offsetY;
-            console.log(canvas.getBoundingClientRect().height/2 - 25 < yVal);
-            console.log(canvas.getBoundingClientRect().height/2 - 25 + height > yVal);
-            console.log(canvas.getBoundingClientRect().width/2 - 60 < xVal);
-            console.log(canvas.getBoundingClientRect().width/2 - 60 + width > xVal);
             if ((canvas.getBoundingClientRect().width/2 - 60 < xVal) && (canvas.getBoundingClientRect().width/2 - 60 + width > xVal) && 
             (canvas.getBoundingClientRect().height/2-25 < yVal) && (canvas.getBoundingClientRect().height/2 - 25 + height > yVal)) {
-                console.log('Restart');
                 _game.startAgain();
             }   
          }, false);

@@ -195,10 +195,12 @@ window.addEventListener('load', function(){
                     this.Enter = new Button(this,4,50,50,document.getElementById('enter'),'Enter')
                 ];
             }
+
+            this.flag = true;
         }
     }
 
-    const game = new Game(canvas.width, canvas.height, canvas, false); // 08.11.2023
+    const game = new Game(canvas.width, canvas.height, canvas, null); // 08.11.2023
     let lastTime = 0;
     const Start = new StartGame(game);
 
@@ -209,7 +211,7 @@ window.addEventListener('load', function(){
         lastTime = timeStamp;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         game.draw(ctx);
-        if(game.healths.length == 0 && Start.flag == false){
+        if(game.healths.length == 0 && game.flag == null){
             Start.draw(ctx);
         }
         if (game.healths.length != 0){
