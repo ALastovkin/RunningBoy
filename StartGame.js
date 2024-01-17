@@ -27,7 +27,7 @@ export class StartGame{
         context.textAlign = 'left';
         context.fillStyle = this.fontColor;
 
-        context.fillText('Начать игры',
+        context.fillText('Начать игру',
         this.game.width/2 + (100 - context.measureText('Начать игру ').width),
         this.game.height/2 - 60)
 
